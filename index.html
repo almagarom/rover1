@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Estilos de CSS-->	
+		<style>
+		body{
+			background-image: url("mars.gif");
+			background-position: center;
+			background-size: cover;
+		}
+		/*Para agregar bordes en el lienzo*/
+		#myCanvas
+		{
+			margin-top: 30px;
+			border-width:10px;
+			background-color: white; 
+			border-style:ridge;
+		}
+		/*Para cambiar el texto a blanco*/
+		h1,h4
+		{
+			color: white !important;
+		}
+		</style>
+		<!--Enlaces de Boostrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<title>Explorador de Marte</title>
+	</head>
+	<!--------------------------------------------->
+	<!--PASO 1-->
+	<!--Será el evento en el cual se ejecutará la funcion-->
+	<!--cuando cargue la página-->
+	<body onload="add();">
+		<!--Una vez que se cargue la página, el cuerpo se cargará-->
+		<!--Y ocurrirá el evento onload-->
+
+		<center>
+		<h1>Mueve el explorador de Marte</h1>
+			<!--Añadimos el lienzo-->
+			<!--Agregamos ID y tamaño-->
+			<canvas id="myCanvas" width="800" height="600">
+			</canvas>
+		<h4>
+			<!--Para mostrar un mensaje -->
+			<!--Para cambiar el color solo de esa palabra en negritas-->
+			<!--Terminamos de añadir el mensaje completo-->
+			<b class="text-danger">NOTA : </b> SI NO SE VE EL EXPLORADOR, PRESIONA CUALQUIERA DE LAS FLECHAS
+		</h4>
+		<p>Si quieres revisar el código ASCII, da click <a href="https://img.blogs.es/anexom/wp-content/uploads/2020/08/Ascii.jpg" target="_blank">aquí</a> </p>
+
+		</center>
+		<!--Enlacees al archivo JS-->
+		<script src="main.js">
+		</script>
+	</body>
+</html>
